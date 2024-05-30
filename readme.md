@@ -1,8 +1,9 @@
 # Aeropuertos (Proyeto Final)
 Proyecto final para el curso de Estructura de datos I / EAFIT
-## Names:
+## Nombres:
 #### Abraham Elias Navarro Martinez
-#### Brayan Santiago Gonzalez Mateus 
+#### Brayan Santiago Gonzalez Mateus
+#### Samuel Molina Echeverri
 ## Compilador: 
 Python, version 3.11.0 64-bit
 ## IDEs:
