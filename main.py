@@ -22,11 +22,11 @@ nx.draw(G, pos, with_labels=True, node_color='lightblue', node_size=500, font_si
 edge_labels_duration = nx.get_edge_attributes(G, 'duracion')
 edge_labels_price = nx.get_edge_attributes(G, 'precio')
 
-edge_labels_combined = {key: f"dur: {value}, price: {edge_labels_price[key]}" for key, value in edge_labels_duration.items()}
+edge_labels_combined = {key: f"dur: {value}, precio: {edge_labels_price[key]}" for key, value in edge_labels_duration.items()}
 
 nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels_combined, font_color='red')
 
-plt.title('Graph with Duration and Cost')
+plt.title('Grafo con duracion y precios de vuelos entre ciudades')
 plt.show()
 
 
