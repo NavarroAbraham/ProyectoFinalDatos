@@ -39,10 +39,11 @@ def comprobar_vuelo(G, ciudad1, ciudad2):
 def ruta_mas_barata(G, ciudad1, ciudad2):
     try:
         path = nx.dijkstra_path(G, ciudad1, ciudad2, weight='precio')
-        return "La ruta mas barata entre {} y {} es: {}".format(ciudad1, ciudad2, ' -> '.join(path))
+        precio_total = sum(G[path[i]][path[i + 1]]['precio'] for i in range(len(path) - 1))
+        return "La ruta mas barata entre {} y {} es: {}, con un precio de {}".format(ciudad1, ciudad2, ' -> '.join(path), precio_total)
     except nx.NetworkXNoPath:
         return "No hay rutas entre {} y {}.".format(ciudad1, ciudad2)
-
+    
 def tiempo_total_de_vuelo(G, ciudad1, ciudad2):
     try:
         duration = nx.dijkstra_path_length(G, ciudad1, ciudad2, weight='duracion')
