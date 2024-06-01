@@ -1,4 +1,4 @@
-# Aeropuertos (Proyeto Final)
+# Aeropuertos (Proyecto Final)
 Proyecto final para el curso de Estructura de datos I / EAFIT
 ## Nombres:
 #### Abraham Elias Navarro Martinez
